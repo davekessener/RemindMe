@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  recipient: MyString
+  title: MyString
+  message: MyText
+  send_at: 2015-08-12 09:36:19
+  was_sent: false
+
+two:
+  recipient: MyString
+  title: MyString
+  message: MyText
+  send_at: 2015-08-12 09:36:19
+  was_sent: false
