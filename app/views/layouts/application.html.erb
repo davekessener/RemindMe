@@ -6,7 +6,18 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body onload="$('.fading').delay(3000).fadeOut('fast');">
+  
+  <% if flash[:notice] %>
+    <div class="fading notice">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+  <% if flash[:alert] %>
+    <div class="fadin alert">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
 
 <%= yield %>
 
